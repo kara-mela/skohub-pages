@@ -1,0 +1,23 @@
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix g: <https://w3id.org/garden-tools/>.
+
+g:
+    a skos:ConceptScheme;
+    dct:description "Garden tools"@en;
+    dct:title "Garden tools"@en;
+    skos:hasTopConcept g:35206, g:4dbee, g:7c837 .
+g:35206
+    a skos:Concept;
+    skos:narrower g:e9f8d;
+    skos:prefLabel "scissors"@en;
+    skos:topConceptOf g: .
+g:4dbee a skos:Concept; skos:prefLabel "spade"@en; skos:topConceptOf g: .
+
+g:7c837 a skos:Concept; skos:prefLabel "shovel"@en; skos:topConceptOf g: .
+
+g:e9f8d
+    a skos:Concept;
+    skos:broader g:35206;
+    skos:inScheme g:;
+    skos:prefLabel "secateurs"@en.
